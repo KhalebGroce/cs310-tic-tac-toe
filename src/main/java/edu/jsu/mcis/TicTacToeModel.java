@@ -78,7 +78,6 @@ public class TicTacToeModel {
             for(int j = 0; j< width; j++){
                 board[i][j] = Mark.EMPTY;
             }
-
         }
     }
 	
@@ -96,28 +95,20 @@ public class TicTacToeModel {
 			xTurn = !xTurn;
 				return true;
         }
-        else {return false;}
-        
-        
-        
+        else {return false;}   
     }
-
-        
-    
 	
     private boolean isValidSquare(int row, int col) {
         
         /* Return TRUE if the specified location is within the bounds of the board */
         
 		boolean square = false;
-           if((row <0 ||row >=width) || (col< 0 || col>=width)){
+			if((row <0 ||row >=width) || (col< 0 || col>=width)){
                return false;
-
            }
-           else{
-               return true;
+			else{
+				return true;
            }
-        
     }
     
 	
@@ -194,7 +185,7 @@ public class TicTacToeModel {
               return true;
             }
         }
-        if(diagonalONE || diagonalTWO){
+        if(D1 || D2){
             return true;
         }
         else{
@@ -253,9 +244,6 @@ public class TicTacToeModel {
         
         /* Output the board contents as a string (see examples) */
         
-             StringBuilder output = new StringBuilder("  ");
-        
-        /* Output the board contents as a string (see examples) */
        int boardcount = 0;
         for (int i = 0; i < getWidth(); i++){
             output.append(i);

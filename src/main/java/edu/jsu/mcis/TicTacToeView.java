@@ -28,7 +28,7 @@ public class TicTacToeView {
 		
 		int Mycol = keyboard.nextInt();
 		
-		if ((row >= 0 && col >= 0) && (row <= 2 && col <= 2)){
+		if ((Myrow >= 0 && Mycol >= 0) && (Myrow <= 2 && Mycol <= 2)){
 			TicTacToeMove Move = new TicTacToeMove(Myrow, Mycol);
 				return Move;
         }
